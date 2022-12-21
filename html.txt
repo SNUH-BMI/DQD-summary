@@ -2,10 +2,6 @@
 <h1>DATA <style="color:#20425a>QUALITY</style> ASSESSMENT</h1>
 <h2>{{SOURCE_DESCRIPTION}}</h2>
 <h3>Results generated at {{start_time}} in {{execution_time}}</h3>
-<br>
-
-
-
 
     <style>
         table {

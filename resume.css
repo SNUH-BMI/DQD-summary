@@ -15,7 +15,8 @@ table.dataTable thead th,table.dataTable thead td{
 }
 
 td {
-  vertical-align: top;
+  vertical-align: center;
+  text-align: center;
   font-size:14px;
 }
 
@@ -52,9 +53,20 @@ div.dt-buttons {
 @media (min-width: 992px) {
   body {
     padding-top: 10rem;
-    padding-left: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap');
+</style>
 
 h1,
 h2,
@@ -70,15 +82,18 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 1.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: normal;
 }
 
 p.lead {
