@@ -138,3 +138,4 @@
             </tr>
         </tbody>
     </table>
+<h3>Among {{entire}} checks, {{Total.Total.Total}} checks({{ratio}}) are applicable in {{SOURCE_DESCRIPTION}}.</h3>

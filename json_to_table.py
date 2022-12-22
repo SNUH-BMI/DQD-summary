@@ -49,6 +49,7 @@ checkresults = values[3] # 딕셔너리로 이루어진 리스트
 # 레코드 데이터프레임
 result_df = pd.DataFrame(checkresults)
 print(len(result_df))
+_entire = len(result_df)
 
 # Error 제거
 #result_df = result_df[pd.isna(result_df['ERROR'])]
@@ -164,6 +165,16 @@ dqd_html = dqd_html.replace(text,str(execution_time))
 
 text = "{{"+"start_time"+"}}"
 dqd_html = dqd_html.replace(text,str(start_time))
+
+# entire rows
+text = "{{"+"entire"+"}}"
+dqd_html = dqd_html.replace(text, str(_entire))
+
+# proportion of total / entire rows
+_ratio = round(len(data[('Total','Total')])/_entire*100)
+text = "{{"+"ratio"+"}}"
+dqd_html = dqd_html.replace(text, str(_ratio)+"%")
+
 
 
 # In[187]:
